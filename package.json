@@ -2,7 +2,7 @@
   "name": "homework-11",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://goitacademy.github.io/831230/goit-js2-hw-11",
+  "homepage": "https://831230.github.io/goit-js2-hw-11/",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /goit-js2-hw-11/"
