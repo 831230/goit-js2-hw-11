@@ -3,9 +3,9 @@ import Notiflix from 'notiflix';
 import SimpleLightbox from 'simplelightbox';
 import "simplelightbox/dist/simple-lightbox.min.css";
 
-FETCH_API_URL = "https://pixabay.com/api/";
-API_KEY = "26135070-3e729b9e8c0999352fd85e768";
-IMAGES_PER_PAGE = 40;
+const FETCH_API_URL = "https://pixabay.com/api/";
+const API_KEY = "26135070-3e729b9e8c0999352fd85e768";
+const IMAGES_PER_PAGE = 40;
 
 const galleryContainer = document.querySelector(".gallery");
 const searchForm = document.getElementById("search-form");
