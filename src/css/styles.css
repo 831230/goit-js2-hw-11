@@ -17,6 +17,17 @@ img {
   width: 250px;
 }
 
+.logo-space {
+  margin: auto;
+  height: 70px;
+  text-align: center;
+  background-color: rgb(34, 34, 34);
+}
+.logo-space img {
+  width: 300px;
+  padding: 10px;
+}
+
 .search-form {
   background-color: rgb(55, 107, 185);
   text-align: center;
@@ -41,11 +52,6 @@ img {
 .search-form button:focus {
   color: rgb(255, 255, 255);
   background-color: rgb(41, 158, 204);
-}
-
-.logo-space {
-  text-align: center;
-  background-color: rgb(34, 34, 34);
 }
 
 .gallery {
