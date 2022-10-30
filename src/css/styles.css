@@ -88,6 +88,9 @@ img {
 /* ---------------------LOAD MORE BUTTON----------------------- */
 
 .load-more-space {
+  padding: 0 100px;
+  display: flex;
+  justify-content: space-between;
   background-color: rgb(55, 107, 185);
   text-align: center;
   margin-top: 20px;
