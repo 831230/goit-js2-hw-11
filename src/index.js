@@ -104,7 +104,7 @@ const fetchApi = async (inputValue,nextPage) => {
           </div>
         </div>
         `
-    });
+    }).join("");
     showSimplelightbox()
   } catch (error) {
     console.log(error);
@@ -128,7 +128,7 @@ function showSimplelightbox(){
 
 // const scrollUp = () => {
 //   const nav = 0;
-//   window.scrollTo({top: nav, behavior: "smooth"});
+//   return window.scrollTo({top: nav, behavior: "smooth"});
 //   // setTimeout(() => {
 //   //   const intervalId = setInterval(() => {
 //   //     scrollDelay();
@@ -146,7 +146,7 @@ function loadMoreResults() {
   // setTimeout(() => {
   //   scrollUp()
   // }, 600);
-
+  scrollUp();
   amountLoadedImages()
 
   pageNumberInfo.innerHTML = `Page ${pageNumber} &#47; ${sumOfPages}`;
@@ -157,4 +157,18 @@ function amountLoadedImages(){
   pageNumber+=1;
   sumLoadedImages+=IMAGES_PER_PAGE;
   console.log(pageNumber,sumLoadedImages, sumOfPages);
+}
+
+function scrollUp(){
+//   const { height: cardHeight } = document
+//  .querySelector(".gallery")
+//  .firstElementChild.getBoundingClientRect();
+  const cardHeight = document.querySelector(".gallery").firstElementChild;
+  cardHeight.style.top=( cardHeight.offsetTop + 10) + "px";
+  console.log(cardHeight.offsetTop);
+
+  window.scrollTo({
+  top: cardHeight * 2,
+  behavior: "smooth",
+ });
 }
